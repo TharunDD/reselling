@@ -26,7 +26,7 @@ const ProductCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://3.110.128.177:3000/p/product/ga")
+      .get("http://13.234.78.102:3000/p/product/ga")
       .then((response) => setUsers(response.data))
       .catch((error) => {
         console.error("Error fetching user data:", error);

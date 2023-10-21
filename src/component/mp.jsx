@@ -23,7 +23,7 @@ const Spa = () => {
         <div className="col-md-12" id="main">
           <div className="col-md-4" id="ff1">
             <img
-              src={`http://3.110.128.177:3000/${data.image}`}
+              src={`http://13.234.78.102:3000/${data.image}`}
               alt="Yphone"
               id='ff2'
             />

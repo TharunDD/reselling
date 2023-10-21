@@ -46,7 +46,7 @@ function Sigg() {
           const sendOTP = async () => {
             try {
               console.log(umail);
-              const response = await axios.post(`http://3.110.128.177:3000/u/${umail}`);
+              const response = await axios.post(`http://13.234.78.102:3000/u/${umail}`);
               if(response.status==200){
                 setsent(true);
                 console.log("hifroom seto");
@@ -95,7 +95,7 @@ function Sigg() {
               };
         
               try {
-                const response = await axios.post("http://3.110.128.177:3000/u/user/insertion", requestData);
+                const response = await axios.post("http://13.234.78.102:3000/u/user/insertion", requestData);
                 if (response.data.user) {
                   dispatch(login(response.data.user))
                   navigate("/");

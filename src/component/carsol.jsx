@@ -61,8 +61,8 @@ const Carsl = () => {
               style={im}
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5>Start Selling</h5>
+              <p>Dont't let the old products to be a barrier to buy new things</p>
             </div>
           </div>
           <div className="carousel-item">
@@ -73,8 +73,8 @@ const Carsl = () => {
               style={im}
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>uses of selling</h5>
+              <p>It is very use way of making money</p>
             </div>
           </div>
           <div className="carousel-item">
@@ -85,13 +85,13 @@ const Carsl = () => {
               style={im}
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>start with seccond</h5>
+              <p>It is a useful way of starting of</p>
             </div>
           </div>
           <div className="carousel-item"> {/* Add a new carousel item */}
             <img
-              src="/20945855.jpg" // Replace with the URL of your fourth image
+              src="https://tse4.explicit.bing.net/th?id=OIP.S4UMHbd5s9u5KUzT7aNsoQHaE8&pid=Api&P=0&h=180" // Replace with the URL of your fourth image
               className="d-block w-100"
               alt="..."
               style={im}

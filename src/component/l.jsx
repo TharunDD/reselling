@@ -21,7 +21,7 @@ function LoginForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://3.110.128.177:3000/u/login', formData);
+      const response = await axios.post('http://13.234.78.102:3000/u/login', formData);
 
       if (response.status === 200) {
         // Handle successful login here

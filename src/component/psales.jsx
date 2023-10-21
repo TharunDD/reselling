@@ -16,7 +16,7 @@ const Ps = () => {
     if (confirmed) {
       // Perform the delete action here, outside of the useEffect
       axios
-        .delete(`http://3.110.128.177:3000/p/product/de/${product._id}`)
+        .delete(`http://13.234.78.102:3000/p/product/de/${product._id}`)
         .then((response) => {
           console.log(response.message);
           // Update the users state to reflect the changes
@@ -30,7 +30,7 @@ const Ps = () => {
 
   useEffect(() => {
     axios
-      .get(`http://3.110.128.177:3000/p/product/usp/${us.uid}`)
+      .get(`http://13.234.78.102:3000/p/product/usp/${us.uid}`)
       .then((response) => setUsers(response.data))
       .catch((error) => {
         console.error("Error fetching user data:", error);
