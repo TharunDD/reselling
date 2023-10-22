@@ -16,7 +16,7 @@ const Ord = () => {
     if (confirmed) {
       // Perform the delete action here, outside of the useEffect
       axios
-        .delete(`http://13.234.78.102:3000/b/product/de/${product._id}`)
+        .delete(`http://13.235.185.231:3000/b/product/de/${product._id}`)
         .then((response) => {
           console.log(response.message);
           // Update the users state to reflect the changes
@@ -30,7 +30,7 @@ const Ord = () => {
 
   useEffect(() => {
     axios
-      .get(`http://13.234.78.102:3000/b/product/bu/${us.uid}`)
+      .get(`http://13.235.185.231:3000/b/product/bu/${us.uid}`)
       .then((response) => setUsers(response.data))
       .catch((error) => {
         console.error("Error fetching user data:", error);
@@ -44,7 +44,7 @@ const Ord = () => {
         {users.map((product) => (
           <div className="cart-item" key={product._id}>
             <div className="cart-product">
-              <img src={`http://13.234.78.102:3000/${product.image}`} alt="product" />
+              <img src={`http://13.235.185.231:3000/${product.image}`} alt="product" />
               <div>
                 <h3>{product.model}</h3>
                 <p>{product.desc}</p>

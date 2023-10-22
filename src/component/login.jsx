@@ -38,7 +38,7 @@ function Logg() {
     }
 
     try {
-      const response = await axios.post('http://13.234.78.102:3000/u/user/search', {
+      const response = await axios.post('http://13.235.185.231:3000/u/user/search', {
         umail,
         upassword: password, // Make sure the server expects 'upassword'
       });

@@ -95,7 +95,7 @@ function Sigg() {
               };
         
               try {
-                const response = await axios.post("http://13.234.78.102:3000/u/user/insertion", requestData);
+                const response = await axios.post("http://13.235.185.231:3000/u/user/insertion", requestData);
                 if (response.data.user) {
                   dispatch(login(response.data.user))
                   navigate("/");

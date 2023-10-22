@@ -54,7 +54,7 @@ function Salf() {
       formDataToSend.append("image", image);
 
       try {
-        const response = await axios.post("http://13.234.78.102:3000/p/product/ap", formDataToSend);
+        const response = await axios.post("http://13.235.185.231:3000/p/product/ap", formDataToSend);
         console.log(response.data);
         toast.success(`Your product ${model} is on sale`);
         na("/ps");

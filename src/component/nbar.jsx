@@ -61,7 +61,7 @@ function Nabar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/l">
+            <a className="nav-link" href="/log">
               About
             </a>
           </li>

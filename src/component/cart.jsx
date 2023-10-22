@@ -27,10 +27,10 @@ const ShoppingCart = () => {
       "order_id": data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       "handler": function (response){
         console.log(response);
-        axios.post(`http://13.234.78.102:3000/verify`,{response:response}).then((res)=>{
+        axios.post(`http://13.235.185.231:3000/verify`,{response:response}).then((res)=>{
           toast.success("order completed");
            axios
-        .post(`http://13.234.78.102:3000/b/product/cart/${u.uid}`, cart.Cartitems) // Sending the array directly
+        .post(`http://13.235.185.231:3000/b/product/cart/${u.uid}`, cart.Cartitems) // Sending the array directly
         .then((response) => {
           console.log(response.data.message);
           toast.success("Your Order Confirmed");
@@ -55,7 +55,7 @@ const ShoppingCart = () => {
     const _data={
       amount:cart.CartTotalA,
     }
-    axios.post(`http://13.234.78.102:3000/orders`,_data).then((res)=>{
+    axios.post(`http://13.235.185.231:3000/orders`,_data).then((res)=>{
       if(res){
         console.log(res.data,'29');
         handleopenpay(res.data.data)
